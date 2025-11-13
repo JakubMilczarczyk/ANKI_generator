@@ -17,7 +17,7 @@ poetry.lock
 # DVC
 *.dvc
 .dvc/
-data/
+data/*
 
 # IDE/editor config
 .vscode/
