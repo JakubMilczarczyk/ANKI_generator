@@ -1,0 +1,29 @@
+[project]
+name = "anki-generator"
+version = "0.1.0"
+description = "Autamate creating ANKI cards using multi-agentic system"
+authors = [
+    {name = "Jakub Milczarczyk",email = "milczarczykjakub@gmail.com"}
+]
+license = {text = "MIT License"}
+readme = "README.md"
+requires-python = "^3.12"
+dependencies = [
+    "langchain (>=1.0.5,<2.0.0)",
+    "langchain-google-genai (>=3.0.3,<4.0.0)",
+    "pydantic (>=2.12.4,<3.0.0)",
+    "typer (>=0.20.0,<0.21.0)",
+    "pytest (>=9.0.1,<10.0.0)",
+    "python-dotenv (>=1.2.1,<2.0.0)"
+]
+
+[tool.poetry]
+packages = []
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.14.5"
+black = "^25.11.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
